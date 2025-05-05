@@ -113,3 +113,10 @@ img {
 /*=================================== 
 #RESUABLE CSS CLASSES
 ===================================*/
+
+.container {
+  background-color: var(--first-color);
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+}
