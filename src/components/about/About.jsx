@@ -12,7 +12,7 @@ const About = () => {
                 </div>
 
                 <div className="about__content">
-                    <h2 className="section__title" data-title='About Us'>
+                    <h2 className="section__title title-left" data-title='About Us'>
                         Fresh, organic coffee made to delight — pure taste in every sip!
                     </h2>
 
@@ -20,17 +20,17 @@ const About = () => {
 
                     <div className="about_details grid">
                         <p className="about__details-description">
-                            <FiCheck className='about__details-icon' />
+                            <FiCheck />
                             Fresh & Organic: We serve only the finest organic coffee, brewed fresh for every cup.
                         </p>
 
                         <p className="about__details-description">
-                            <FiCheck className='about__details-icon' />
+                            <FiCheck />
                             Cozy Vibes: A warm, pet-friendly space where comfort meets great taste.
                         </p>
 
                         <p className="about__details-description">
-                            <FiCheck className='about__details-icon' />
+                            <FiCheck />
                             Crafted with Care: Every blend is thoughtfully prepared to give you a perfect, heartwarming sip.
                         </p>
                     </div>
