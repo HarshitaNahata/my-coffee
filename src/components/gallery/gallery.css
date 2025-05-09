@@ -39,7 +39,8 @@
     height: 50px;
     border-radius: 50%;
     place-items: center;
-    margin-top: 3rem;
+    display: grid;
+    /*margin-top: 3rem;*/
     transition: 0.3s var(--transition);
     transition-delay: 0.3s;
 }
