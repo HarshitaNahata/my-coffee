@@ -47,8 +47,8 @@ const Stats = () => {
                     </div>
 
                     <div>
-                        <p className="stats__no">50</p>
-                        <h3 className="stats__title">+ Years of Experience</h3>
+                        <p className="stats__no">10 +</p>
+                        <h3 className="stats__title"> Years of Experience</h3>
                     </div>
                 </div>
             </div>

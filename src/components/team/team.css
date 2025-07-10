@@ -63,3 +63,19 @@
 .team__social-link:hover {
     background-color: var(--first-color);
 }
+
+.team__img {
+    width: 280px;
+    /* Set your desired width */
+    height: 300px;
+    /* Set your desired height */
+    object-fit: cover;
+    /* Ensures the image fills the box, cropping if necessary */
+    border-radius: 8px;
+    /* Optional: adds rounded corners for a modern look */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    /* Optional: subtle shadow for depth */
+}

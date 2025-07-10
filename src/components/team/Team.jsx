@@ -18,7 +18,7 @@ const Team = () => {
                 <div className="team_item">
                     <img src={chef1} alt="" className="team__img" />
                     <div className="team__data">
-                        <h3 className="team__title">Malissa Fie</h3>
+                        <h3 className="team__title">Rishita Gagrani</h3>
                         <p className="team__job">Senior Chef</p>
                     </div>
 
@@ -41,7 +41,7 @@ const Team = () => {
                 <div className="team_item">
                     <img src={chef2} alt="" className="team__img" />
                     <div className="team__data">
-                        <h3 className="team__title">Chad Smith</h3>
+                        <h3 className="team__title">Aniket Anand</h3>
                         <p className="team__job">Senior Chef</p>
                     </div>
 
@@ -64,7 +64,7 @@ const Team = () => {
                 <div className="team_item">
                     <img src={chef3} alt="" className="team__img" />
                     <div className="team__data">
-                        <h3 className="team__title">Arron Rodri</h3>
+                        <h3 className="team__title">Harshita Nahata</h3>
                         <p className="team__job">Senior Chef</p>
                     </div>
 
@@ -87,7 +87,7 @@ const Team = () => {
                 <div className="team_item">
                     <img src={chef4} alt="" className="team__img" />
                     <div className="team__data">
-                        <h3 className="team__title">Tony Pinto</h3>
+                        <h3 className="team__title">Mr. Happiness Officer</h3>
                         <p className="team__job">Senior Chef</p>
                     </div>
 
