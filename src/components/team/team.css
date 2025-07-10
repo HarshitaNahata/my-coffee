@@ -79,3 +79,76 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     /* Optional: subtle shadow for depth */
 }
+
+@media (max-width: 1024px) {
+    .team__grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets */
+        gap: 2rem;
+    }
+
+    .team__img {
+        width: 220px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 700px) {
+    .team__grid {
+        grid-template-columns: 1fr;
+        /* 1 column on mobile */
+        gap: 1.5rem;
+    }
+
+    .team__img {
+        width: 100%;
+        max-width: 220px;
+        height: 220px;
+    }
+
+    .team__item {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .team__data {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .team__img {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .team__item {
+        max-width: 98vw;
+        padding: 0.25rem;
+    }
+
+    .team__title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Make sure the social icons don't overflow */
+@media (max-width: 700px) {
+    .team__socials {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0.5rem;
+        opacity: 1 !important;
+        /* Always visible on mobile */
+        right: auto;
+        top: auto;
+        row-gap: 0;
+        column-gap: 0.5rem;
+    }
+
+    .team__item:hover .team__socials {
+        right: auto;
+        opacity: 1;
+    }
+}

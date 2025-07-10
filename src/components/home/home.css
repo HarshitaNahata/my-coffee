@@ -49,3 +49,100 @@
     background-color: var(--first-color);
     color: var(--title-color);
 }
+
+/* Responsive styles for Home component */
+@media (max-width: 900px) {
+    .home {
+        padding-top: calc(var(--header-height) + 2.5rem);
+        /* Space for header */
+    }
+
+    .home__content {
+        max-width: 90vw;
+    }
+
+    .home__title {
+        font-size: 2rem;
+    }
+
+    .home__subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding-top: 5rem;
+        /* Space for fixed header */
+        align-items: flex-start;
+    }
+
+    .home__container {
+        padding: 0;
+    }
+
+    .home__content {
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .home {
+        min-height: 100vh;
+        padding-top: calc(var(--header-height) + 1.2rem);
+        /* Slightly less space for small screens */
+        align-items: flex-start;
+    }
+
+    .home__container {
+        padding: 0;
+    }
+
+    .home__content {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .home__subtitle {
+        font-size: 1.1rem;
+    }
+
+    .home__title {
+        font-size: 1.3rem;
+        margin-block: 0.75rem;
+    }
+
+    .home__description {
+        margin-bottom: 1.5rem;
+        font-size: 0.98rem;
+    }
+
+    .home__btns {
+        flex-direction: column;
+        row-gap: 1rem;
+        column-gap: 0;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .home {
+        padding-top: calc(var(--header-height) + 0.5rem);
+        /* Even less for extra small screens */
+    }
+
+    .home__content {
+        padding: 0 0.25rem;
+    }
+
+    .home__title {
+        font-size: 1rem;
+    }
+
+    .home__btns .btn {
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+}

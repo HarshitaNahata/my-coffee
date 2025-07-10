@@ -46,3 +46,50 @@
 .features__item:hover {
     transform: translateY(-0.5rem);
 }
+
+/* Responsive styles for Features component */
+@media (max-width: 1024px) {
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets */
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .features__grid {
+        grid-template-columns: 1fr;
+        /* 1 column on small screens */
+        gap: 1.5rem;
+    }
+
+    .features__item {
+        padding: 1.25rem;
+    }
+
+    .feature__img {
+        width: 44px;
+        margin-bottom: 1rem;
+    }
+
+    .feature__title {
+        font-size: 1.1rem;
+    }
+
+    .feature__shape {
+        width: 70px;
+        right: 0.5rem;
+        top: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .features__item {
+        padding: 0.75rem;
+    }
+
+    .feature__shape {
+        display: none;
+        /* Hide decorative shape on very small screens */
+    }
+}

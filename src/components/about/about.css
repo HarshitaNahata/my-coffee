@@ -37,3 +37,58 @@
 .about__details-description {
     gap: 0.625rem;
 }
+
+/* Responsive styles for About component */
+@media (max-width: 768px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+        /* Stack image and content vertically */
+        row-gap: 2rem;
+        /* Add space between image and content */
+        column-gap: 0;
+        /* Remove horizontal gap */
+    }
+
+    .about__img-wrapper {
+        padding-left: 0;
+        /* Remove left padding */
+        max-width: 350px;
+        /* Optional: limit image width */
+        margin: 0 auto;
+        /* Center image */
+    }
+
+    .about__img {
+        width: 100%;
+        /* Make image responsive */
+        height: auto;
+        display: block;
+        border-radius: 12px;
+        /* Optional: rounded corners */
+    }
+
+    .about__img-wrapper::before {
+        display: none;
+        /* Hide the background accent on small screens (optional) */
+    }
+
+    .about__content {
+        padding: 0 1rem;
+        /* Add side padding */
+    }
+
+    .about_details.grid {
+        gap: 1rem;
+        /* More space between details */
+    }
+}
+
+@media (max-width: 480px) {
+    .about__content {
+        padding: 0 0.5rem;
+    }
+
+    .section__title {
+        font-size: 1.35rem;
+    }
+}

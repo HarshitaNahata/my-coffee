@@ -80,3 +80,72 @@
 .swiper-pagination-bullet-active {
     background-color: var(--first-color);
 }
+
+/* Responsive styles for Offer component */
+@media (max-width: 900px) {
+    .offer__item {
+        grid-template-columns: 1fr;
+        /* Stack image and content vertically */
+        row-gap: 1.5rem;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .offer__img-wrapper {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .offer_img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        border-radius: var(--radius);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .offer__content {
+        padding: 2rem 1rem;
+    }
+
+    .offer__content::before {
+        inset: 0.25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .offer__content {
+        padding: 1.2rem 0.5rem;
+    }
+
+    .offer__title {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .offer__discount {
+        font-size: 1rem;
+    }
+
+    .offer__description {
+        margin-block: 0.25rem 0.75rem;
+        font-size: 0.97rem;
+    }
+
+    .swiper-pagination {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .offer__content {
+        padding: 0.7rem 0.25rem;
+    }
+
+    .offer__title {
+        font-size: 0.97rem;
+    }
+}

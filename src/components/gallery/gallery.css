@@ -76,3 +76,47 @@
 .gallery__item:hover .gallery__title {
     bottom: 1.75rem;
 }
+
+/* Responsive styles for Gallery component */
+@media (max-width: 900px) {
+    .gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets */
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery__grid {
+        grid-template-columns: 1fr;
+        /* 1 column on mobile */
+        gap: 1rem;
+    }
+
+    .gallery__img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: var(--radius);
+    }
+
+    .gallery__icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+
+    .gallery__title {
+        padding-block: 0.75rem;
+        font-size: 1rem;
+        inset-inline: 0.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery__title {
+        font-size: 0.95rem;
+        padding-block: 0.5rem;
+        inset-inline: 0.25rem;
+    }
+}
